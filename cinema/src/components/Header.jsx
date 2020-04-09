@@ -1,17 +1,17 @@
 import React from "react"
-import { Logo } from "./Logo"
-import { Nav } from "./Nav"
-import { UserIcon } from "./User"
-export const Header = () => (
-  <header>
-    <div>
-      <Logo></Logo>
-    </div>
-    <div>
-      <Nav></Nav>
-    </div>
-    <div>
-      <UserIcon></UserIcon>
-    </div>
-  </header>
+import { Layout, Menu } from "antd"
+
+const { Header } = Layout
+export const HeaderComponent = () => (
+  <Header>
+    <a href="/">
+      <div className="logo" />
+    </a>
+
+    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
+      <Menu.Item key="1">nav 1</Menu.Item>
+      <Menu.Item key="2">nav 2</Menu.Item>
+      <Menu.Item key="3">nav 3</Menu.Item>
+    </Menu>
+  </Header>
 )
