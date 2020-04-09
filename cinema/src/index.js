@@ -1,11 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./style/index.css"
-import App from "./components/App"
+import "./assets/style/index.scss"
+
+import { LayoutAnt } from "./container/LayoutAnt"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LayoutAnt />
   </React.StrictMode>,
   document.getElementById("root")
 )
